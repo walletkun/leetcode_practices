@@ -42,7 +42,7 @@ def countVowels(words, queries):
     #Prefix sum array
     n = len(valid)
     prefix = [0] * n # [0, 0 ,0, 0, 0] <- Using example 1 this is what prefix looks like
-    prefix[0] = 1 if valid[0] else 0 # To start off the prefix we'll have to start with 1 at the beginning provided by valid we created 
+    prefix[0] = 1 if valid[0] else 0 # To start off the prefix we'll have to start with 1 at the beginning provided by valid 
     # print(prefix) <- debug line
     # Build our prefix array
     for i in range(1, n): # Start at 1 since we built 1 at the 0'th index 
@@ -68,3 +68,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+        
+
+    
