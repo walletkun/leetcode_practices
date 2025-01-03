@@ -30,6 +30,20 @@ Welcome to my LeetCode Practice Log! This document serves as a record of all the
   - [Multiply Strings](https://leetcode.com/problems/multiply-strings/) - Medium
   - [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/) - Medium
 
+## Programming Languages
+
+I'll be solving problems in multiple programming languages to:
+- Strengthen my polyglot programming skills
+- Understand language-specific implementations
+- Compare different approaches across languages
+
+Languages include:
+- Python
+- Java
+- JavaScript
+
+Each solution will be organized in language-specific folders with appropriate file extensions.
+
 ## Algorithms & Implementations
 I'll be implementing various algorithms and data structures, providing detailed explanations of:
 - How they work
