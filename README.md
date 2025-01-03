@@ -10,6 +10,7 @@ Welcome to my LeetCode Practice Log! This document serves as a record of all the
 - **Similar Questions**: (Provide the Question number if possible) (Question name)
 
 ```Bash
+'''
 Template:
 
 Leetcode <number> or Any questions title
@@ -19,6 +20,7 @@ Similar Problems:
 ----------------------------
 
 Descriptions of the Questions
+'''
 
 ```
 
