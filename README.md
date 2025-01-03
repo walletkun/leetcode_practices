@@ -7,28 +7,24 @@ Welcome to my LeetCode Practice Log! This document serves as a record of all the
 - **Problem Title**: The name of the problem on LeetCode.
 - **Problem Link**: A direct link to the problem on LeetCode.
 - **Difficulty**: The difficulty level of the problem (Easy, Medium, Hard).
-- **Similar Problems**: A list of problems that are conceptually or algorithmically similar, which I plan to work on for further practice.
+- **Similar Questions**: (Provide the Question number if possible) (Question name)
 
 ## Problem List
 
 ### Example Problem 1
 
 - **Problem Title**: Two Sum
-- **Problem Link**: [Two Sum](https://leetcode.com/problems/two-sum/)
+- **Problem Link**: https://leetcode.com/problems/two-sum/
 - **Difficulty**: Easy
-- **Similar Problems**:
-  - [3Sum](https://leetcode.com/problems/3sum/) - Medium
-  - [4Sum](https://leetcode.com/problems/4sum/) - Medium
-  - [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) - Medium
+- **Similar Questions**: 3 Sum, 4 Sum, 2 Sum II - Sorted
 
 ### Example Problem 2
 
 - **Problem Title**: Add Two Numbers
 - **Problem Link**: [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 - **Difficulty**: Medium
-- **Similar Problems**:
-  - [Multiply Strings](https://leetcode.com/problems/multiply-strings/) - Medium
-  - [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/) - Medium
+- **Similar Questions**: Multiply Strings, Add Binary
+
 
 ## Programming Languages
 
