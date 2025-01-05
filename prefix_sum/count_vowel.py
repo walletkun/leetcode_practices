@@ -58,6 +58,29 @@ def countVowels(words, queries):
 
     return res
 
+
+def count_vowels(words, queries):
+    def is_vowel(char):
+        vowels = {'a','e','i','o','u'}
+        return char in vowels
+
+    prefix = [0] * len(words)
+    prefix[0] = 1 if is_vowel(words[0]) else 0
+
+    for i in range(1, len(words)):
+        prefix[i] = prefix[i - 1] + (1 if is_vowel(words[i]) else 0)
+
+    res = []
+    for li, ri in queries:
+        if li == 0:
+            res.append(prefix[ri])
+        else:
+            res.append(prefix[ri] - prefix[li - 1])
+
+    return res
+    
+    
+
 # Test run
 def main():
     words = ["aba", "bcb", "ece", "aa", "e"]
@@ -65,6 +88,12 @@ def main():
 
     output = countVowels(words, queries) # Expected output: [2,3,0]
     print(output)
+
+    s = 'hello'
+    query = [[0, 1], [1, 4], [0, 4]]
+    output2 = count_vowels(s, query)
+    print(output2)
+
 
 if __name__ == '__main__':
     main()
