@@ -50,7 +50,7 @@ def containDuplicate(nums):
 
 
 def main():
-    nums = [1,2,3,1]
+    nums = []
     output = containDuplicate(nums)
 
     print(output)
