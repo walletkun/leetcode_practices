@@ -12,7 +12,6 @@ Return an array `ans` of size `queries.length`, where `ans[i]` is the answer to 
 Input:
 nums = [2,4,5,6,8]
 queries = [[0,3], [1,4], [2,2]]
-
 '''
 
 def count_even_numbers_in_ranges(nums,queries):
