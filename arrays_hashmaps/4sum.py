@@ -30,7 +30,7 @@ def fourSum(nums,target):
                     while l < r and nums[r] == nums[r + 1]:
                         r += 1
 
-                if cur_sum < target:
+                elif cur_sum < target:
                     l += 1
 
                 else:
