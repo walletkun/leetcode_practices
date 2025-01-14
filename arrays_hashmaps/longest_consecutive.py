@@ -4,12 +4,12 @@ def longest_consecutive(nums):
 
     for element in elements:
         length = 0
-        if not (element - 1 in elements):
+        if element + 1 not in elements: # Used to check if the starting point exist in the set
             cur_element = element
             length = 1
 
-            while(cur_element + 1) in elements:
-                cur_element += 1
+            while(cur_element - 1) in elements:
+                cur_element -= 1
                 length += 1
 
             max_length = max(max_length, length)
