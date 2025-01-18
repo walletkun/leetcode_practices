@@ -9,10 +9,9 @@ Welcome to my LeetCode Practice Log! This document serves as a record of all the
 - **Difficulty**: The difficulty level of the problem (Easy, Medium, Hard).
 - **Similar Questions**: (Provide the Question number if possible) (Question name)
 
+## Template
 ```Bash
 '''
-Template:
-
 Leetcode <number> or Any questions title
 Leetcode Link: <Link> or Any Link: <Link>
 Difficulty: Difficulty
