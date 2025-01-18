@@ -22,6 +22,7 @@ Similar Problems:
 Descriptions of the Questions
 '''
 
+Custom questions will not come with templates and some times may forget to add in the template please excuse.
 ```
 
 ## Problem List
