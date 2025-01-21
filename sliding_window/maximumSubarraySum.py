@@ -68,7 +68,7 @@ k = 3
 print(solution(nums, k))
 
 '''
-1. Use a set to maintain distinct elemetns in the window (this is the window)
+1. Use a set to maintain distinct elements in the window (this is the window)
 2. Store the current sum in our window size
 3. Only compare the size when k is met with formula right - left + 1 to maintain the size of the window
 4. Still Shrink down the window size even after comparing because regardless of what happens after that the max_sum has been registered
