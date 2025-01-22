@@ -12,10 +12,7 @@ Return the maximum subarray sum of all the subarrays that meet the conditions. I
 
 A subarray is a contiguous non-empty sequence of elements within an array.
 
- 
-
 Example 1:
-
 Input: nums = [1,5,4,2,9,9,9], k = 3
 Output: 15
 Explanation: The subarrays of nums with length 3 are:
@@ -25,18 +22,20 @@ Explanation: The subarrays of nums with length 3 are:
 - [2,9,9] which does not meet the requirements because the element 9 is repeated.
 - [9,9,9] which does not meet the requirements because the element 9 is repeated.
 We return 15 because it is the maximum subarray sum of all the subarrays that meet the conditions
-Example 2:
 
+Example 2:
 Input: nums = [4,4,4], k = 3
 Output: 0
 Explanation: The subarrays of nums with length 3 are:
 - [4,4,4] which does not meet the requirements because the element 4 is repeated.
 We return 0 because no subarrays meet the conditions.
- 
 '''
 
 
 def solution(nums: list[int], k: int) -> int:
+
+    if len(set(nums)) < k: #If the set length does not build up to it then we can just return 0
+        return 0
     seen = set()
     cur_sum = 0
     max_sum = 0
