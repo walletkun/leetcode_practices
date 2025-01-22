@@ -3,7 +3,6 @@ def longest_consecutive(nums):
     elements = set(nums)
 
     for element in elements:
-        length = 0
         if element + 1 not in elements: # Used to check if the starting point exist in the set
             cur_element = element
             length = 1
