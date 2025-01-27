@@ -1,7 +1,15 @@
+'''
+Leetcode 992. Subarrays with K Different Integers
+Leetcode Link: https://leetcode.com/problems/subarrays-with-k-different-integers/description/
+Difficulty: Hard
+Similar Problems: Longest Substring Without Repeating Characters, Longest Substring with At Most Two Distinct Characters
+----------------------------
+
+Descriptions of the Questions
+'''
 
 
 def subArraysKIntegers(nums: list[int], k) -> int:
-
     def atMostK(nums, k):
         # We will identify the frequency map
         frequency = {}
@@ -32,11 +40,14 @@ k = 3
 print(subArraysKIntegers(nums, k))
 
 # Plan
-'''
-1. We will need to have a helper function to help us how many result sub arrays we can form from our array
-2. Which by utilizing the formula which is subarray with exactly k = (subarray with at most k) - (subarrays with at most k - 1)
-3. Plan for the helper function we will need to use a sliding technique to identify when we will shrink the window and when we will expand the window
-4. We will use a hashmap to count the occurrence of how many distinct values we can have, since the question can have at most K we then can have less than k.
-5. Therefore we will utilize the formula subarray with exactly k = (subarray with at most k) - (subarrays with at most k - 1)
-4. Then we will store the formula in our result then return the result
-'''
+"""
+1. Similar to almost all k sliding window questions
+2. We will use a helper function to help us determine how many subarrays can be formed with at most k dinstict values
+3. But we also need to check the k - 1 values that are distinct because to make sure we don't miss any single k distinct values
+4. Where in our helper function we will use a sliding window technique, where we will have a left pointer as our starting pointer and right pointer are our expanding pointer
+5. Which we will also have a frequency map to keep track of the unique values we iterate over, then once our map is greater than our k amount, we will start shrinking the window
+6. And instead of comparing like how we do in substrings, we will add the window size of our current window after each iteration because different from substring we're only looking at 1 singular max lenght substring, where as this is where we look up all different kinds of distinct subarrays
+7. Then store the result with result = helper(nums, k) - helper(nums, k - 1) we're subtracting here because to reduce redundancy from the previous execution
+8. Then return the result
+"""
+        
