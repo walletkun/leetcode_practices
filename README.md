@@ -49,7 +49,7 @@ I'll be solving problems in multiple programming languages to:
 - Compare different approaches across languages
 
 Languages include:
-- Python
+- Python (mostly used)
 - Java
 - JavaScript
 
