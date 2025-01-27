@@ -49,14 +49,6 @@ def twoDistinct(s:str) -> int:
 
 
     return maxLength
-        
-    
-
-
-
-
-    
-
 
 # Debug
 s = "eceba"
