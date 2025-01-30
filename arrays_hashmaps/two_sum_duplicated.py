@@ -20,7 +20,7 @@ def twoSumDuplicated(nums: list[int], target: int) -> list[int]:
             right -= 1
 
 
-    return res if res else [[-1, -1]]
+    return res if res else [-1, -1]
 
 
 nums = [1,2,2,3]
