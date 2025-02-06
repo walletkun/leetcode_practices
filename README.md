@@ -76,5 +76,3 @@ Feel free to contribute! If you'd like to add features, fix bugs, or improve doc
 
 - This log is a work in progress and will be updated regularly as I solve more problems and discover new similar problems to practice.
 - Feel free to suggest additional similar problems or improvements to the log structure.
-
-testing
